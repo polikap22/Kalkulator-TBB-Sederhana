@@ -1,13 +1,14 @@
 def main():
     print('Kalkulator TBB Sederhana Kelompok Banteng Merah (Kelompok 1) :D')
+    print('Anggota: Razas, Arga, Irfan dan Yusron')
     trag = input('Mau mencari nilai benda awal, benda kedua, atau nilai X&Y0? (ketik ba, bk, atau xy): ')
     if trag == 'bk':
         trig = input('Silakan pilih opsi benda kedua (ketik jajar-genjang, segitiga, atau lingkaran): ')
         if trig == 'jajar-genjang':
             a = eval(input('Masukkan dulu Alasnya: '))
-            b2 = eval(input('Masukkan dulu Tinggi benda 2: '))
-            b = eval(input('Masukkan dulu Tinggi benda 1: '))
-            t = a * b2
+            b2 = eval(input('Masukkan dulu Tinggi benda 1: '))
+            b = eval(input('Masukkan dulu Tinggi benda 2: '))
+            t = a * b
             b3 = b2 + 1/2 * (b)
             a2 = 1/2 * a
             print('X2=', a2,'Y2=', b3,'A2=', t)
@@ -15,8 +16,8 @@ def main():
 
         elif trig == 'segitiga':
             a = eval(input('Masukkan dulu Alasnya: '))
-            b2 = eval(input('Masukkan dulu Tinggi benda 2: '))
-            b = eval(input('Masukkan dulu Tinggi benda 1: '))
+            b2 = eval(input('Masukkan dulu Tinggi benda 1: '))
+            b = eval(input('Masukkan dulu Tinggi benda 2: '))
             t = (a*(b))/2
             b3 = b2 + 1/3 * (b)
             a2 = 1/2 * a
