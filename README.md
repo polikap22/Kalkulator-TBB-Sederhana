@@ -11,3 +11,5 @@ Membutuhkan Python versi 3
 2. Pastikan sudah menginstall python pada perangkat
 
 3. Jalankan scriptnya
+
+Versi: Beta 0.1
