@@ -1,6 +1,5 @@
 def main():
     print('Kalkulator TBB Sederhana Kelompok Banteng Merah (Kelompok 1) :D')
-    print('Anggota: Razas, Arga, Irfan dan Yusron')
     trag = input('Mau mencari nilai benda awal, benda kedua, atau nilai X&Y0? (ketik ba, bk, atau xy): ')
     if trag == 'bk':
         trig = input('Silakan pilih opsi benda kedua (ketik jajar-genjang, segitiga, atau lingkaran): ')
