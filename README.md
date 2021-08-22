@@ -5,7 +5,7 @@ Kelompok Banteng Merah (Kelompok 1) :D
 
 Membutuhkan Python versi 3
 
-Bonus Kalkulator Torsi Sederhana
+Bonus Kalkulator Torsi sederhana
 
 # Instalasi:
 1. Download dan Extrak file zipnya
