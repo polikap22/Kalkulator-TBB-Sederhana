@@ -8,41 +8,9 @@ def main():
     print('---------------------------------------------------')
     trag = input('Mau mencari nilai benda awal, benda kedua, atau nilai X&Y0? (ketik ba, bk, atau xy): ')
     if trag == 'bk':
-        trig = input('Silakan pilih opsi benda kedua (ketik kelompok-persegi(kpi), segitiga, setengah-lingkaran(stl): ')
-        if trig == 'kelompok-persegi' or 'kpi':
-            ppkm = input('Pilih mau persegi, jajar-genjang(jg), atau persegi-panjang(pjj): ')
-            if ppkm == 'persegi':
-                a = eval(input('Masukkan Alasnya: '))
-                b2 = eval(input('Masukkan Tinggi Benda 1: '))
-                b = eval(input('Masukkan Tinggi Benda 2: '))
-                t = (a*a)
-                b3 = b2 + 1/2 * (b)
-                a2 = 1/2 * (a)
-                print('X2=', a2,'Y2=', b3,'A2=', t)
-                main()
-            elif ppkm == 'persegi-panjang' or 'pjj':
-                a = eval(input('Masukkan Alasnya: '))
-                b2 = eval(input('Masukkan Tinggi Benda 1: '))
-                b = eval(input('Masukkan Tinggi Benda 2: '))
-                t = (a) * (b)
-                b3 = b2 + 1 / 2 * (b)
-                a2 = 1 / 2 * (a * b)
-                print('X2=', a2, 'Y2=', b3, 'A2=', t)
-                main()
-            elif trig == 'jajar-genjang' or 'jg':
-                a = eval(input('Masukkan Alasnya: '))
-                b2 = eval(input('Masukkan Tinggi Benda 1: '))
-                b = eval(input('Masukkan Tinggi Benda 2: '))
-                t = (a) * (b)
-                b3 = b2 + 1 / 2 * (b)
-                a2 = 1 / 2 * (a * b)
-                print('X2=', a2, 'Y2=', b3, 'A2=', t)
-                main()
-            else:
-                print('Serius dongg :D')
-                main()
-
-        elif trig == 'segitiga':
+        trig = input('Silakan pilih opsi benda kedua (ketik kelompok-persegi(kpi), segitiga(sgt), setengah-lingkaran(stl): ')
+        if trig == 'sgt':
+            print('Segitiga')
             a = eval(input('Masukkan Alasnya: '))
             b2 = eval(input('Masukkan Tinggi Benda 1: '))
             b = eval(input('Masukkan Tinggi Benda 2: '))
@@ -52,7 +20,8 @@ def main():
             print('X2=', a2, 'Y2=', b3, 'A2=', t)
             main()
 
-        elif trig == 'setengah-lingkaran' or 'stl':
+        elif trig == 'stl':
+            print('Setengah Lingkaran')
             z = input('Ada Jari-jarinya gak? (ya/tidak): ')
             if z == 'tidak':
                 a = eval(input('Masukkan Alasnya: '))
@@ -86,9 +55,51 @@ def main():
             else:
                 print('Serius dongg :D')
                 main()
+
+        elif trig == 'kpi':
+            ppkm = input('Pilih mau persegi(psg), jajar-genjang(jg), atau persegi-panjang(pjj): ')
+            if ppkm == 'persegi':
+                print('Persegi')
+                a = eval(input('Masukkan Alasnya: '))
+                b2 = eval(input('Masukkan Tinggi Benda 1: '))
+                b = eval(input('Masukkan Tinggi Benda 2: '))
+                t = (a*a)
+                b3 = b2 + 1/2 * (b)
+                a2 = 1/2 * (a)
+                print('X2=', a2,'Y2=', b3,'A2=', t)
+                main()
+            elif ppkm == 'pjj':
+                print('Persegi Panjang')
+                a = eval(input('Masukkan Alasnya: '))
+                b2 = eval(input('Masukkan Tinggi Benda 1: '))
+                b = eval(input('Masukkan Tinggi Benda 2: '))
+                t = (a) * (b)
+                b3 = b2 + 1 / 2 * (b)
+                a2 = 1 / 2 * (a * b)
+                print('X2=', a2, 'Y2=', b3, 'A2=', t)
+                main()
+            elif ppkm == 'jg':
+                print('Jajar Genjang')
+                a = eval(input('Masukkan Alasnya: '))
+                b2 = eval(input('Masukkan Tinggi Benda 1: '))
+                b = eval(input('Masukkan Tinggi Benda 2: '))
+                t = (a) * (b)
+                b3 = b2 + 1 / 2 * (b)
+                a2 = 1 / 2 * (a * b)
+                print('X2=', a2, 'Y2=', b3, 'A2=', t)
+                main()
+            else:
+                print('Serius dongg :D')
+                main()
+
+        else:
+            print('Serius dongg :D')
+            main()
+
     elif trag == 'ba':
-        trig = input('Silakan pilih opsi benda awal (ketik jajar-genjang(jg), persegi, atau persegi-panjang(pjj): ')
-        if trig == 'jajar-genjang' or 'jg':
+        sut = input('Silakan pilih opsi benda awal (ketik jajar-genjang(jg), persegi(psg), atau persegi-panjang(pjj): ')
+        if sut == 'jg':
+            print('Jajar Genjang')
             a = eval(input('Masukkan Alasnya: '))
             b = eval(input('Masukkan Tingginya: '))
             t = a * b
@@ -97,7 +108,8 @@ def main():
             print('X1=', a2, 'Y1=', b3, 'A1=', t)
             main()
 
-        elif trig == 'persegi':
+        elif sut == 'psg':
+            print('Persegi')
             a = eval(input('Masukkan Sisinya: '))
             t = a * a
             b3 = 1 / 2 * a
@@ -105,7 +117,8 @@ def main():
             print('X1=', a2, 'Y1=', b3, 'A1=', t)
             main()
 
-        if trig == 'persegi-panjang' or 'pjj':
+        elif sut == 'pjj':
+            print('Persegi Panjang')
             a = eval(input('Masukkan Panjangnya: '))
             b = eval(input('Masukkan Lebarnya: '))
             t = a * b
@@ -113,7 +126,7 @@ def main():
             a2 = 1 / 2 * a
             print('X1=', a2, 'Y1=', b3, 'A1=', t)
             main()
-                
+
         else:
             print('Serius dongg :D')
             main()
